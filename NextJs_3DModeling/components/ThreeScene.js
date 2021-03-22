@@ -48,14 +48,14 @@ class ThreeScene extends Component {
     var mtlLoader = new MTLLoader();
 
     //mtlLoader.load("./assets/IronMan.mtl", (materials) => {
-    mtlLoader.load("./assets/IronMan.mtl", (materials) => {
+    mtlLoader.load("./assets1/TeddyBear.mtl", (materials) => {
       materials.preload();
       console.log("Material loaded");
       //Load Object Now and Set Material
       var objLoader = new OBJLoader();
       objLoader.setMaterials(materials);
       objLoader.load(
-        "./assets/IronMan.obj",
+        "./assets1/TeddyBear.obj",
         (object) => {
           this.freedomMesh = object;
           this.freedomMesh.position.setY(3); //or  this
