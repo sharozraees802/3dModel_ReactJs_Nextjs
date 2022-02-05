@@ -1,11 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
-import fs from 'fs'
-import path from 'path'
-import https from "https";
 import url from 'url';
 
-const filePath = path.resolve('.', './public/assets/freedom.obj')
-const imageBuffer = fs.readFileSync(filePath)
 
 export default async (req, res) => {
     res.statusCode = 200
